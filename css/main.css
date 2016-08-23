@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Cambria, Verdana, serif;
+    color: black;
+    background: #7cda5b;
+}
+
+#totalStore{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    font-size: 1.4em;
+    width: 320px;
+    padding: 10px;
+}
+
+#totalStore #total{
+    background: url("../img/supply.png") no-repeat left center;
+    padding: 0 0 0 30px;
+}
+
+#users{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.user{
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.3);
+
+}
+
+.user .userStats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user .userName{
+    background: url("../img/profile.png") no-repeat left center;
+    padding: 0 0 0 25px;
+    font-size: 1.6em;
+}
+
+.user .userBeers{
+    background: url("../img/supply.png") no-repeat left center;
+    padding: 0 0 0 30px;
+    font-size: 1.6em;
+}
+
+.user .userControls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user .substractBeer{
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 10px;
+    font-family: Calibri, sans-serif;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 10px 0 0 0;
+    color: #e7e7e7;
+}
+
+.user .addBeer{
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 10px;
+    font-family: Calibri, sans-serif;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 10px 0 0 0;
+    color: #e7e7e7;
+}
+
+.user .substractBeer:hover, .user .addBeer:hover{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.user input{
+    background: white url("../img/bottle.png") no-repeat left center;
+    padding: 0 5px 0 20px;
+    border: 1px solid #f5f5f5;
+    width: 40px;
+    height: 30px;
+    text-align: right;
+    margin: 10px 0 0 0;
+}
+
+aside{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+aside section{
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+aside section h2{
+    font-family: Cambria, Verdana, serif;
+    font-weight: 500;
+    padding: 0 0 5px 0;
+}
+
+#addUserForm, #deleteUserForm{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#addUserName{
+    border: 1px solid #f5f5f5;
+    width: 180px;
+    height: 26px;
+    padding: 2px;
+}
+
+#deleteUserName{
+    height: 26px;
+    padding: 2px;
+    border: 1px solid #f5f5f5;
+}
+
+#submitAddUser, #submitDeleteUser{
+    cursor: pointer;
+    padding: 5px;
+    font-family: Calibri, sans-serif;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    font-size: 1.2em;
+}
+
+#submitAddUser:hover, #submitDeleteUser:hover{
+    cursor: pointer;
+    padding: 5px;
+    font-family: Calibri, sans-serif;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    font-size: 1.2em;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#selectBeer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#selectBeer div{
+    background: rgba(0, 0, 0, 0.3);
+    width: 80px;
+    height: 20px;
+    padding: 80px 10px 0 10px;
+    margin:20px;
+    cursor: pointer;
+}
+
+.selected{
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+}
+
+#lock{
+    width: 80px;
+    height: 80px;
+    margin:20px;
+    background: rgba(0, 0, 0, 0.3) url("../img/open.png") no-repeat left center;
+    cursor: pointer;
+}
+
+#lock.locked{
+    background: rgba(0, 0, 0, 0.5) url("../img/locked.png") no-repeat left center;
+}
+
+#history{
+    margin: 20px;
+}
+
+#history td{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    margin: 2px;
+}

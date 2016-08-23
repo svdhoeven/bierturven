@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+
+    RewriteEngine On
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^user$ php/user.php
+    RewriteRule ^user/([0-9]+)$ php/user.php?id=$1
+    RewriteRule ^user/([0-9]+)/(-?[0-9]+)$ php/user.php?id=$1&amount=$2
+    RewriteRule ^beer$ php/beer.php
+    RewriteRule ^history$ php/history.php
+</IfModule>
